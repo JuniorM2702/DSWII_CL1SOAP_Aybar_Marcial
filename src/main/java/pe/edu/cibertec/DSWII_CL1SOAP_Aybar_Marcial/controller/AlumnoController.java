@@ -1,4 +1,4 @@
-package pe.edu.cibertec.DSWII_CL1SOAP_Aybar_Marcial.P2Controller;
+package pe.edu.cibertec.DSWII_CL1SOAP_Aybar_Marcial.controller;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
