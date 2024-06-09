@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.08 a las 08:38:57 PM COT 
+// Generado el: 2024.06.08 a las 09:46:40 PM COT 
 //
 
 
@@ -37,59 +37,59 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetAutoresRequest }
+     * Create an instance of {@link GetPublicacionesRequest }
      * 
      */
-    public GetAutoresRequest createGetAutoresRequest() {
-        return new GetAutoresRequest();
+    public GetPublicacionesRequest createGetPublicacionesRequest() {
+        return new GetPublicacionesRequest();
     }
 
     /**
-     * Create an instance of {@link GetAutoresResponse }
+     * Create an instance of {@link GetPublicacionesResponse }
      * 
      */
-    public GetAutoresResponse createGetAutoresResponse() {
-        return new GetAutoresResponse();
+    public GetPublicacionesResponse createGetPublicacionesResponse() {
+        return new GetPublicacionesResponse();
     }
 
     /**
-     * Create an instance of {@link Autoresws }
+     * Create an instance of {@link Publicacionws }
      * 
      */
-    public Autoresws createAutoresws() {
-        return new Autoresws();
+    public Publicacionws createPublicacionws() {
+        return new Publicacionws();
     }
 
     /**
-     * Create an instance of {@link GetAutorRequest }
+     * Create an instance of {@link GetPublicacionRequest }
      * 
      */
-    public GetAutorRequest createGetAutorRequest() {
-        return new GetAutorRequest();
+    public GetPublicacionRequest createGetPublicacionRequest() {
+        return new GetPublicacionRequest();
     }
 
     /**
-     * Create an instance of {@link GetAutorResponse }
+     * Create an instance of {@link GetPublicacionResponse }
      * 
      */
-    public GetAutorResponse createGetAutorResponse() {
-        return new GetAutorResponse();
+    public GetPublicacionResponse createGetPublicacionResponse() {
+        return new GetPublicacionResponse();
     }
 
     /**
-     * Create an instance of {@link PostAutorRequest }
+     * Create an instance of {@link PostPublicacionRequest }
      * 
      */
-    public PostAutorRequest createPostAutorRequest() {
-        return new PostAutorRequest();
+    public PostPublicacionRequest createPostPublicacionRequest() {
+        return new PostPublicacionRequest();
     }
 
     /**
-     * Create an instance of {@link PostAutorResponse }
+     * Create an instance of {@link PostPublicacionResponse }
      * 
      */
-    public PostAutorResponse createPostAutorResponse() {
-        return new PostAutorResponse();
+    public PostPublicacionResponse createPostPublicacionResponse() {
+        return new PostPublicacionResponse();
     }
 
 }

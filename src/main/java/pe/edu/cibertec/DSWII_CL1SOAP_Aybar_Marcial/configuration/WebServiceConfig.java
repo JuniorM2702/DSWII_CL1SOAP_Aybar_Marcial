@@ -1,9 +1,11 @@
 package pe.edu.cibertec.DSWII_CL1SOAP_Aybar_Marcial.configuration;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.ws.config.annotation.EnableWs;
 import org.springframework.ws.config.annotation.WsConfigurerAdapter;
@@ -23,7 +25,6 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         servlet.setTransformWsdlLocations(true);
         return new ServletRegistrationBean<>(servlet, "/ws/*");
     }
-
     @Bean(name = "autores")
     public DefaultWsdl11Definition autorWsdl11Definition(XsdSchema autorSchema){
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
@@ -36,6 +37,20 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     @Bean
     public XsdSchema AutorSchema(){
         return new SimpleXsdSchema(new ClassPathResource("xsd/autores.xsd"));
+    }
+
+    @Bean(name = "publicaciones")
+    public DefaultWsdl11Definition publicacionWsdl11Definition(XsdSchema publicacionSchema){
+        DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+        wsdl11Definition.setPortTypeName("PublicacionesPort");
+        wsdl11Definition.setLocationUri("/ws/publicaciones");
+        wsdl11Definition.setTargetNamespace("http://www.cibertec.edu.pe/ws/objects");
+        wsdl11Definition.setSchema(publicacionSchema);
+        return wsdl11Definition;
+    }
+    @Bean
+    public XsdSchema PublicacionSchema(){
+        return new SimpleXsdSchema(new ClassPathResource("xsd/publicaciones.xsd"));
     }
 
 }
