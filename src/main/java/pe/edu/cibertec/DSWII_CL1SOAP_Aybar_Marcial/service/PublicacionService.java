@@ -9,7 +9,7 @@ import pe.edu.cibertec.ws.objects.Publicacionws;
 import java.util.List;
 
 @Service
-public class PublicacionService {
+public class PublicacionService implements IPublicacionService {
 
     private PublicacionRepository publicacionRepository;
     private PublicacionConvert publicacionConvert;

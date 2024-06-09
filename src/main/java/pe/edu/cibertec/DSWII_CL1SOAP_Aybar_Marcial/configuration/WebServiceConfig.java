@@ -26,7 +26,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         return new ServletRegistrationBean<>(servlet, "/ws/*");
     }
     @Bean(name = "autores")
-    public DefaultWsdl11Definition autorWsdl11Definition(XsdSchema autorSchema){
+    public DefaultWsdl11Definition autorWsdl11Definition(@Qualifier("AutorSchema") XsdSchema autorSchema){
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("AutoresPort");
         wsdl11Definition.setLocationUri("/ws/autores");
@@ -40,7 +40,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     }
 
     @Bean(name = "publicaciones")
-    public DefaultWsdl11Definition publicacionWsdl11Definition(XsdSchema publicacionSchema){
+    public DefaultWsdl11Definition publicacionWsdl11Definition(@Qualifier("PublicacionSchema") XsdSchema publicacionSchema){
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("PublicacionesPort");
         wsdl11Definition.setLocationUri("/ws/publicaciones");

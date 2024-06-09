@@ -12,11 +12,11 @@ public class PublicacionConvert {
     public Publicacion convertPublicacionWsToPublicacion(Publicacionws publicacionws){
 
         Publicacion publicacion = new Publicacion();
-        publicacion.setIdPublicacion(publicacionws.getIdPublicacion());
+        publicacion.setIdpublicacion(publicacionws.getIdpublicacion());
         publicacion.setTitulo(publicacionws.getTitulo());
         publicacion.setResumen(publicacionws.getResumen());
-        publicacion.setFechPublicacion(publicacionws.getFechPublicacion());
-        publicacion.setIdAutor(publicacionws.getIdAutor());
+        publicacion.setFechpublicacion(publicacionws.getFechPublicacion());
+        publicacion.setIdautor(publicacionws.getIdautor());
         return publicacion;
     }
 
@@ -30,11 +30,11 @@ public class PublicacionConvert {
 
     public Publicacionws convertPublicacionToPublicacionWs(Publicacion publicacion){
         Publicacionws publicacionws = new Publicacionws();
-        publicacionws.setIdPublicacion(publicacion.getIdPublicacion());
+        publicacionws.setIdpublicacion(publicacion.getIdpublicacion());
         publicacionws.setTitulo(publicacion.getTitulo());
         publicacionws.setResumen(publicacion.getResumen());
-        publicacionws.setFechPublicacion(publicacion.getFechPublicacion());
-        publicacionws.setIdAutor(publicacion.getIdAutor());
+        publicacionws.setFechPublicacion(publicacion.getFechpublicacion());
+        publicacionws.setIdautor(publicacion.getIdautor());
         return publicacionws;
     }
 

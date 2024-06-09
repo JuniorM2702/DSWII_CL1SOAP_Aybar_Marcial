@@ -13,10 +13,10 @@ import java.util.Date;
 public class Publicacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idPublicacion;
+    private Integer idpublicacion;
     private String titulo;
     private String resumen;
-    private Date fechPublicacion;
-    @Column(name = "IdAutor")
-    private Integer idAutor;
+    private Date fechpublicacion;
+    @Column(name = "idautor")
+    private Integer idautor;
 }

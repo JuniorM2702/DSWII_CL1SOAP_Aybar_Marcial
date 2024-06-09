@@ -51,11 +51,11 @@
 
     <xs:complexType name="publicacionws">
         <xs:sequence>
-            <xs:element name="idPublicacion" type="xs:int"/>
+            <xs:element name="idpublicacion" type="xs:int"/>
             <xs:element name="titulo" type="xs:string"/>
             <xs:element name="resumen" type="xs:string"/>
             <xs:element name="fechPublicacion" type="xs:date"/>
-            <xs:element name="idAutor" type="xs:int"/>
+            <xs:element name="idautor" type="xs:int"/>
         </xs:sequence>
     </xs:complexType>
 

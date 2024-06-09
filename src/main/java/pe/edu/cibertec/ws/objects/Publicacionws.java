@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.08 a las 09:46:40 PM COT 
+// Generado el: 2024.06.08 a las 10:20:03 PM COT 
 //
 
 
@@ -28,11 +28,11 @@ import java.util.Date;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="idPublicacion" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="idpublicacion" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="titulo" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="resumen" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="fechPublicacion" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
- *         &lt;element name="idAutor" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="idautor" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -43,15 +43,15 @@ import java.util.Date;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "publicacionws", propOrder = {
-    "idPublicacion",
+    "idpublicacion",
     "titulo",
     "resumen",
     "fechPublicacion",
-    "idAutor"
+    "idautor"
 })
 public class Publicacionws {
 
-    protected int idPublicacion;
+    protected int idpublicacion;
     @XmlElement(required = true)
     protected String titulo;
     @XmlElement(required = true)
@@ -59,22 +59,22 @@ public class Publicacionws {
     @XmlElement(required = true)
     @XmlSchemaType(name = "date")
     protected Date fechPublicacion;
-    protected int idAutor;
+    protected int idautor;
 
     /**
-     * Obtiene el valor de la propiedad idPublicacion.
+     * Obtiene el valor de la propiedad idpublicacion.
      * 
      */
-    public int getIdPublicacion() {
-        return idPublicacion;
+    public int getIdpublicacion() {
+        return idpublicacion;
     }
 
     /**
-     * Define el valor de la propiedad idPublicacion.
+     * Define el valor de la propiedad idpublicacion.
      * 
      */
-    public void setIdPublicacion(int value) {
-        this.idPublicacion = value;
+    public void setIdpublicacion(int value) {
+        this.idpublicacion = value;
     }
 
     /**
@@ -148,19 +148,19 @@ public class Publicacionws {
     }
 
     /**
-     * Obtiene el valor de la propiedad idAutor.
+     * Obtiene el valor de la propiedad idautor.
      * 
      */
-    public int getIdAutor() {
-        return idAutor;
+    public int getIdautor() {
+        return idautor;
     }
 
     /**
-     * Define el valor de la propiedad idAutor.
+     * Define el valor de la propiedad idautor.
      * 
      */
-    public void setIdAutor(int value) {
-        this.idAutor = value;
+    public void setIdautor(int value) {
+        this.idautor = value;
     }
 
 }
