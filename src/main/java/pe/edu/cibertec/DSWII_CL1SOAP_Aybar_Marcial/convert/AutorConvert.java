@@ -10,6 +10,7 @@ import java.util.List;
 public class AutorConvert {
 
     public Autor convertAutorWsToAutor(Autoresws autoresws){
+
         Autor autor = new Autor();
         autor.setIdautor(autoresws.getIdautor());
         autor.setNomautor(autoresws.getNomautor());

@@ -50,13 +50,13 @@
     </xs:element>
 
     <!-- |||||||||||||||||||||||||||||||| -->
-    <xs:complexType name="autoresws">
-        <xs:sequence>
-            <xs:element name="idautor" type="xs:int"/>
-            <xs:element name="nomautor" type="xs:string"/>
-            <xs:element name="apeautor" type="xs:string"/>
-            <xs:element name="fechnacautor" type="xs:date"/>
-        </xs:sequence>
-    </xs:complexType>
+<xs:complexType name="autoresws">
+    <xs:sequence>
+        <xs:element name="idautor" type="xs:int"/>
+        <xs:element name="nomautor" type="xs:string"/>
+        <xs:element name="apeautor" type="xs:string"/>
+        <xs:element name="fechnacautor" type="xs:date"/>
+    </xs:sequence>
+</xs:complexType>
 
 </xs:schema>
